@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    background-image: url("body.webp");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.form-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-content-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto auto auto;
+    padding: 45px 40px;
+    align-items: center;
+	background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+	backdrop-filter: blur(8px);
+	box-shadow: 0 8px 10px 0 rgba(0,0,0.37);
+	border: 1px solid rgba(255, 255, 255, 0.386);
+	border-radius: 32px;
+}
+
+.login{
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.input-container{
+    text-align: center;
+}
+
+input[type=text]{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    outline: none;
+    color: black;
+    padding-right: 30px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px;
+    width: 300px;
+}
+
+.email{
+    background-image: url('icons/mail.png');
+}
+
+.password{
+    background-image: url('icons/lock.png');
+}
+
+input[type=text]::placeholder{
+    color: black;
+}
+
+input[type="text"]:focus::placeholder {
+    color: rgb(42, 42, 42);
+}
+
+.settings-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    padding: 18px 0 25px 0;
+}
+
+.check-box{
+    font-size: 18px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    background-color: white;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked::before {
+    content: '\2714';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 15px;
+    font-size: 14px;
+    color: white;
+    background-color: black;
+}
+
+.forgot-paw{
+    font-size: 18px;
+}
+
+.button-container{
+    text-align: center;
+}
+
+.button{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #95333d;
+    border: none;
+    box-shadow: none;
+    transition: all 0.3s ease;
+}
+
+.button:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.register-container{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.register{
+    margin: 0;
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

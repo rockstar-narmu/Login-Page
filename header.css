@@ -1,0 +1,83 @@
+.header{
+    height:75px;
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.logo-container{
+    flex: 0.25;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: 70px 150px;
+    place-items: center;
+}
+
+.logo{
+    width: 50px;
+}
+
+.narmu{
+    font-size: 40px;
+    font-family: 'Moirai One', system-ui;
+    color: black;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.nav-container div{
+    flex: 1;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 23px;
+    border-radius: 8px;
+    padding: 7px 20px;
+    margin: 0 20px;
+    transition: all 0.3s ease;
+
+}
+
+.nav-container div:hover{
+    background-color: rgb(0,0,0,0.5);
+    color: white;
+    padding: 7px 30px;
+    cursor: pointer;
+}
+
+.nav-container p:active{
+    color: black;
+    opacity: 0.5;
+}
+
+@media (max-width: 940px) {
+    .nav-container div {
+        margin: 0 0px;
+    }
+
+    .logo-container{
+        margin-left: 5px;
+    }
+}
+
+@media (min-width: 941px) and (max-width: 987px) {
+    .nav-container div {
+        margin: 0 10px;
+    }
+
+    .logo-container{
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 988px) {
+    .nav-container div {
+        margin: 0 20px;
+    }
+}
