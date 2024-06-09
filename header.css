@@ -56,23 +56,48 @@
     opacity: 0.5;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 800px) {
     .nav-container div {
         margin: 0 0px;
+        font-size: 10px;
+        padding: 5px 10px;
     }
 
     .logo-container{
         margin-left: 5px;
+        grid-template-columns: 25px 65px;
+    }
+
+    .logo{
+        width: 17px;
+    }
+
+    .narmu{
+        font-size: 17px;
+    }
+
+    .nav-container{
+        margin-right: 12px;
     }
 }
 
-@media (min-width: 941px) and (max-width: 987px) {
+@media (min-width: 801px) and (max-width: 987px) {
     .nav-container div {
         margin: 0 10px;
+        font-size: 17px;
+        padding: 7px 15px;
+    }
+
+    .logo{
+        width: 40px;
+    }
+
+    .narmu{
+        font-size: 30px;
     }
 
     .logo-container{
-        margin-left: 20px;
+        grid-template-columns: 50px 120px;
     }
 }
 
