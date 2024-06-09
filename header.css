@@ -79,6 +79,10 @@
     .nav-container{
         margin-right: 12px;
     }
+
+    .nav-container div:hover{
+        padding: 5px 20px;
+    }
 }
 
 @media (min-width: 801px) and (max-width: 987px) {
@@ -98,6 +102,9 @@
 
     .logo-container{
         grid-template-columns: 50px 120px;
+    }
+    .nav-container div:hover{
+        padding: 5px 20px;
     }
 }
 
