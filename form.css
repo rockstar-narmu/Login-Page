@@ -140,3 +140,67 @@ a{
     text-decoration: none;
     color: black;
 }
+
+
+@media (max-width: 800px) {
+    .form-content-container{
+        padding: 25px 20px;
+    }
+
+    .login{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    input[type=text]{
+        width: 75%;
+        padding: 7px 0;
+        font-size: 10px;
+        padding-right: 20px;
+        background-size: 15px;
+        width: 200px;
+    }
+
+    .check-box{
+        font-size: 12px;
+    }
+
+    input[type="checkbox"] {
+        width: 10px;
+        height: 10px;
+    }
+    
+    input[type="checkbox"]:checked::before {
+        content: '\2714';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        line-height: 10px;
+        font-size: 9px;
+    }
+
+    .forgot-paw{
+        font-size: 12px;
+    }
+
+    .button{
+        width: 75%;
+        padding: 7px 0;
+        font-size: 12px;
+    }
+
+    .settings-container{
+        display: grid;
+        grid-template-columns: 0.75fr 0.75fr;
+        column-gap: 20px;
+        padding: 12px 0 12px 0;
+    }
+
+    .register-container{
+        padding-top: 12px;
+    }
+    
+    .register{
+        font-size: 12px;
+    }
+}
